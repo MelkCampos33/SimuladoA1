@@ -12,7 +12,8 @@ builder
     options.
     UseSqlite("Data Source=BancoEstudante.db")
     );
-
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 
 var app = builder.Build();
